@@ -14,7 +14,7 @@ app.get('/',(req,res)=>{
     res.send('API is working');
 })
 
-app.use('/api/book',bookRoutes);
+app.use('/api/books',bookRoutes);
 app.use(notFound);
 
 const PORT=process.env.PORT|| 3000;
